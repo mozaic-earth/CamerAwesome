@@ -384,7 +384,7 @@ class CameraAwesomeX : CameraInterface, FlutterPlugin, ActivityAware {
         val outputFileOptions =
             ImageCapture.OutputFileOptions.Builder(imageFile).setMetadata(metadata).build()
 //        for (imageCapture in cameraState.imageCaptures) {
-        imageCapture.targetRotation = if (orientationStreamListener != null) orientationStreamListener!!.surfaceOrientation else CameraOrientationUtil.degreesToSurfaceRotation(0)
+        imageCapture.targetRotation = if (orientationStreamListener != null) orientationStreamListener!!.surfaceOrientation else CameraOrientationUtil.degreesToSurfaceRotation(270)
         imageCapture.takePicture(outputFileOptions,
             ContextCompat.getMainExecutor(activity!!),
             object : ImageCapture.OnImageSavedCallback {

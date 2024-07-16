@@ -440,7 +440,7 @@
 - (void)takePictureAtPath:(NSString *)path completion:(nonnull void (^)(NSNumber * _Nullable, FlutterError * _Nullable))completion {
   // Instanciate camera picture obj
   CameraPictureController *cameraPicture = [[CameraPictureController alloc] initWithPath:path
-                                                                             orientation:_enableRotation ? _motionController.deviceOrientation : UIDeviceOrientationPortrait
+                                                                             orientation:_enableRotation ? _motionController.deviceOrientation : UIDeviceOrientationLandscapeLeft
                                                                           sensorPosition:_cameraSensorPosition
                                                                          saveGPSLocation:_saveGPSLocation
                                                                        mirrorFrontCamera:_mirrorFrontCamera
