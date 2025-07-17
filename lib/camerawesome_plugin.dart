@@ -234,7 +234,6 @@ class CamerawesomePlugin {
     if (ps != null) {
       return PreviewSize(width: ps.width, height: ps.height);
     } else {
-      // TODO Should not be null?
       return PreviewSize(width: 0, height: 0);
     }
   }
